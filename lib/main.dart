@@ -61,9 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Observer(
                   builder: (_) => Text(
-                        '${controller.counter}',
+                        '${controller.counter} ${controller.ePar == true ? 'Par':'Impar'} Dobro : ${controller.dobro}',
                         style: const TextStyle(fontSize: 35),
                       ),
+                      
                       ),
           ],
         ),
