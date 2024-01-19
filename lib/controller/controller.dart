@@ -15,5 +15,13 @@ abstract class ControllerBase with Store{
   incrementar(){
     counter++;
   }
+
+
+  @computed
+ // bool get ePar => counter % 2 == 0;  //retorna se é par
+  bool get ePar => counter.isEven; //retorna se é par
+
+ @computed
+ int get dobro => counter * 2;
 }
 //4 -> | comando terminal: dart run build_runner build
